@@ -27,9 +27,14 @@
 			text-align:left;
 		}
 		</style>
+
 	</head>
 
 	<body>
+		<audio id="pizza">
+		<source src="sound/pizza_time.mp3"></source>
+		<!-- do audio file for .ogg-->
+		</audio>
 		<h1>xdmemes</h1>
 		<hr>
 		<p><abbr title="ur mom ghey">UMG</abbr></p>
@@ -52,10 +57,11 @@
 		<div class="nosy">	<!--!important!any tag opened in a div must end inside the div-->
 			<h2><span><img src="images/nosy.gif" class="gif">:^)</img></span></h2>
 			<p>bôrk börk</p>
+			<button onclick="playAudio()" type="button">Pizza Time</button>
 			<br/>
 		</div>
 		<div>
-		<button style="color:DodgerBlue;">Hi hey hello :V<button>
+		<button style="color:DodgerBlue;">Hi hey hello :V</button>
 		</div>
 		<div>
 			<mark>Copyright &copy;</mark> 2019 Erwann  <!--text formatting-->
@@ -71,7 +77,13 @@
 			</blockquote>
 			<q >Who's forever anyway?</q>
 		</pre>
-			
+		<script>
+		var audio = document.getElementById("pizza");
+		
+		function playAudio(){
+			audio.play();
+		}
+		</script>
 	</body>
 </html>
 
